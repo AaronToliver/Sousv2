@@ -19,12 +19,16 @@ class App extends Component {
     const { isAuthenticated } = this.props.auth;
 
     return (
-      <div>
+      <div className="container">
         <Navbar fluid>
           <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#">Auth0 - React</a>
-            </Navbar.Brand>
+          <Button
+              bsStyle="primary"
+              className="btn-margin"
+              onClick={this.goTo.bind(this, 'search')}
+            >
+              Search
+            </Button>
             <Button
               bsStyle="primary"
               className="btn-margin"

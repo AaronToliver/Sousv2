@@ -37,14 +37,14 @@ export default class Page extends React.Component {
 
     render () {
         return (
-        <div>
+        <div className="container">
             <Header />
             <Input inputText="" addIngred={this.addList}/>
-            <table>
-                <thead>
-                    <tr>Ingredients</tr>
+            <table className = "table">
+                <thead className = "container">
+                    <th>Ingredients</th>
                 </thead>
-                <tbody>
+                <tbody className = "">
                     {
                         this.state.list.map((list) =>{
                             return <ListItem list={list} key={list.id} id={list.id} removeList={this.removeList}/>

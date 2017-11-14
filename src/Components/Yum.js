@@ -43,12 +43,12 @@ export class Yum extends React.Component {
         });
 
         return(
-            <div>
+            <div className = "container justify-content-center">
                 <input onChange={this.queryUpdate} type="text" value={searchQuery} />
 
                 <h4>{title}</h4>
-                <ul>
-                    <li>{listItems}</li>
+                <ul className="list-group">
+                    <li className="btn btn-primary">{listItems}</li>
                 </ul>
             </div>
         )

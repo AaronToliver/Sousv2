@@ -12,7 +12,7 @@ export default class ListItem extends React.Component {
     render() {
         return (
             <div className="listWrapper">
-                <button classname="removeList" onClick={(e)=> this.removeList(this.props.id)}>remove</button>{this.props.list.text}
+                <button class="btn btn-alert" classname="removeList" onClick={(e)=> this.removeList(this.props.id)}>remove</button>{this.props.list.text}
             </div>
         );
     }

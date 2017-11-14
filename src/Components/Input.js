@@ -23,7 +23,7 @@ export default class Input extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="container justify-content-center">
                 <input type="text" value={this.state.value} onChange={this.handleChange}/>
                 <button className="btn btn-primary" onClick={() => 
                     this.addIngred(this.state.value)}>
